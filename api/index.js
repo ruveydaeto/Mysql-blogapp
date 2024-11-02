@@ -11,6 +11,11 @@ const app = express();
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 app.use(cookieParser());
+app.use(cors({
+  origin: "http://deploy-mysql-blogapp.vercel.app",
+  methods: ["GET", "POST"],
+  credentials: true,
+}));
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
