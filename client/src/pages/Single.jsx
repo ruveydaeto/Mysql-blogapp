@@ -100,7 +100,7 @@ const Single = () => {
             <div className="more-divider" style={{ marginTop: "10px", marginLeft: "20px", border: "1px dashed black" }}></div>
           </Box>
           <Grid container spacing={2} maxWidth={"100%"} justifyContent={"flex-start"}>
-            {morePosts.slice(0, 2)?.map((morePost) => (
+            {morePosts.slice(0, 2).map((morePost) => (
               <Grid item xs={12} sm={6} md={6} key={morePost.id}>
                 <Card
                   sx={{
