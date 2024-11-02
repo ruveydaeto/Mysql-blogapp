@@ -1,0 +1,92 @@
+.add {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.editorContainer {
+  height: 500px; /* Increased height */
+  overflow: scroll;
+  border: 1px solid lightgray;
+}
+
+.editor {
+  height: 100%;
+  border: none;
+}
+
+.menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  border: 1px solid lightgray;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+
+.item h1 {
+  font-size: 20px;
+}
+
+.item .file {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.item .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item .buttons :first-child {
+  cursor: pointer;
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+  padding: 3px 5px;
+}
+
+.item .buttons :last-child {
+  cursor: pointer;
+  color: white;
+  background-color: teal;
+  border: 1px solid teal;
+  padding: 3px 5px;
+}
+
+.item .cat {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: teal;
+}
+
+.ql-syntax {
+  background-color: #fdf3f9;
+  border: 1px solid #b193a2;
+  padding: 35px;
+  font-size: initial;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: pre-wrap; /* Ensure that the text wraps correctly */
+}

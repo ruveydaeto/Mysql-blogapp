@@ -1,0 +1,39 @@
+.menu h1 {
+  font-size: 20px;
+  color: #555;
+}
+
+.menu .post {
+  display: flex;
+  flex-direction: row; /* Change to row to align items side by side */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Add some space between posts */
+}
+
+.menu .post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-title {
+  font-size: 15px;
+ 
+  margin-left: 5px; /* Reduce the space between the icon and the title */
+}
+
+.menu .post button {
+  width: max-content;
+  padding: 7.5px 15px;
+  border: none;
+  cursor: pointer;
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+}
+
+.menu .post button:hover {
+  border: 1px solid white;
+  background-color: #b9e7e7;
+  color: black;
+}

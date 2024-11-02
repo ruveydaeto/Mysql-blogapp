@@ -1,0 +1,9 @@
+.app {
+    display: flex;
+    justify-content: center;
+  background-color: #fff7f3;
+  }
+  
+.container {
+  width: 1024px;
+}
