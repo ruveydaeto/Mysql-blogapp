@@ -135,7 +135,7 @@ const Home = () => {
         <div className="posts" style={{ flex: 3 }}>
           <Typography sx={{ textAlign: "center", marginTop: "50px" }} fontWeight={600} fontSize={"27px"}>MY RECENT WORKS</Typography>
           <Grid container spacing={2} maxWidth={"100%"} justifyContent={"flex-start"}>
-            {filteredPosts.map((post) => (
+            {filteredPosts?.map((post) => (
               <Grid item xs={12} sm={6} md={6} key={post.id}>
                 <Card className="post-card" sx={{ marginBottom: 2, backgroundColor: "#fff7f3", margin: "20px", border: "1px dashed black" }}>
                   <Grid container spacing={2} maxWidth={"100%"} justifyContent={"space-between"}>
